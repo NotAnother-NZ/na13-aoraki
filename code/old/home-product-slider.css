@@ -1,0 +1,40 @@
+#discover-product-slider-list {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#discover-product-slider-list::-webkit-scrollbar {
+  display: none;
+}
+
+#discover-product-slider-list.is-dragging {
+  cursor: grabbing !important;
+  user-select: none;
+}
+
+#discover-product-slider-list img,
+#discover-product-slider-list a,
+#discover-product-slider-list .discover-product-slider-list-item {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#discover-product-slider-list .discover-product-slider-list-item:first-child {
+  margin-left: 2rem;
+}
+
+#discover-product-slider-list .discover-product-slider-list-item:last-child {
+  margin-right: 2rem;
+}
+
+@media (max-width: 479px) {
+  #discover-product-slider-list .discover-product-slider-list-item:first-child {
+    margin-left: 1.5rem;
+  }
+
+  #discover-product-slider-list .discover-product-slider-list-item:last-child {
+    margin-right: 1.5rem;
+  }
+}
