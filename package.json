@@ -1,0 +1,23 @@
+{
+  "name": "na13-aoraki",
+  "version": "1.0.0",
+  "description": "This repository contains a feedback template to integrate with Marker.io for collecting user feedback on your Webflow projects.",
+  "homepage": "https://github.com/NotAnother-NZ/na13-aoraki#readme",
+  "bugs": {
+    "url": "https://github.com/NotAnother-NZ/na13-aoraki/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NotAnother-NZ/na13-aoraki.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "webflow-cms-clean.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "webflow-api": "^3.2.0"
+  }
+}
