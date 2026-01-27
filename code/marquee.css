@@ -1,0 +1,19 @@
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-animation-container {
+  display: flex;
+  will-change: transform; /* Optimize for animations */
+}
+
+/* Make sure inner elements don't shrink */
+[class^="marquee-type-"] {
+  display: flex;
+  flex-shrink: 0;
+}
+
+[class^="marquee-type-"] > * {
+  flex-shrink: 0;
+}

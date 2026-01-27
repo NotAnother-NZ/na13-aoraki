@@ -1,0 +1,111 @@
+.location_active {
+  background-color: var(--swatch--dark-900-o20);
+  border-radius: var(--radius--small);
+}
+
+/* Ensure map container is visible */
+.locator_map {
+  min-height: 400px;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+/* Debug: Add a visible background to see if container is there */
+#map {
+  background-color: #e0e0e0;
+  min-height: 400px;
+}
+
+.map-popup {
+  font-family: var(--global--font-family);
+  color: var(--themes--dark);
+  display: flex;
+  flex-direction: column;
+}
+
+.map-name {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.16px;
+}
+
+.map-popupdesc,
+.mapstore-btn {
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: -0.16px;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.mapstore-btn {
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.mapstore-btn:hover {
+  opacity: 0.5;
+}
+
+.direction-btn {
+  color: #c9b794;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25; /* 125% */
+  letter-spacing: -0.16px;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
+.direction-btn:hover {
+  opacity: 0.5;
+}
+
+.gm-style-iw.gm-style-iw-c {
+  max-width: 20rem !important;
+  padding: 2rem 2.25rem !important;
+}
+
+.gm-style-iw-tc::after,
+.gm-style-iw-tc {
+  width: 2.5rem !important;
+  height: 1.25rem !important;
+}
+
+.gm-style-iw-ch {
+  display: none !important;
+}
+
+.gm-style-iw-chr {
+  position: absolute !important;
+  inset: 0.75rem 0.75rem auto auto !important;
+}
+
+.gm-ui-hover-effect {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  padding: 0px !important;
+  outline: none !important;
+  transition: all 0.3s ease;
+}
+
+.gm-ui-hover-effect span {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0px !important;
+  outline: none !important;
+  mask-repeat: no-repeat; /* Prevent repeating */
+  mask-position: center; /* Position of mask */
+  mask-size: cover;
+}
+
+.gm-style-iw-d {
+  overflow: hidden !important;
+}
+
+.search_inactive [locations_item]:has([feature_store].w-condition-invisible) {
+  display: none;
+}
